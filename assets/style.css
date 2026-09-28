@@ -1560,7 +1560,8 @@ footer {
   .hero-portrait-caption small { font-size: 9px; margin-top: 4px; color: var(--ink-faded); opacity: 1; }
   .hero-claim { font-size: 24px; margin-bottom: 16px; }
   .hero-intro { font-size: 14px; line-height: 1.55; margin-bottom: 20px; }
-  .kicker { margin-bottom: 16px; font-size: clamp(7px, 2.2vw, 11px); letter-spacing: clamp(0.5px, 0.3vw, 2px); white-space: nowrap; }
+  .kicker { margin-bottom: 16px; font-size: 9px; letter-spacing: 2px; }
+  .hero-content { min-width: 0; }
   .hero-actions { gap: 14px; }
   .btn-primary { padding: 12px 20px; font-size: 11px; gap: 8px; }
   .btn-secondary { font-size: 11px; }
