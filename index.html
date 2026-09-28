@@ -514,9 +514,13 @@
     'footer > .container > *'
   );
 
-  animatedElements.forEach((el, i) => {
+  const fadeUpDelayCounters = new Map();
+  animatedElements.forEach((el) => {
     el.classList.add('fade-up');
-    el.style.transitionDelay = `${Math.min((i % 6) * 70, 360)}ms`;
+    const parent = el.parentElement;
+    const localIndex = fadeUpDelayCounters.get(parent) || 0;
+    fadeUpDelayCounters.set(parent, localIndex + 1);
+    el.style.transitionDelay = `${Math.min(localIndex * 70, 360)}ms`;
   });
 
   if ('IntersectionObserver' in window) {
