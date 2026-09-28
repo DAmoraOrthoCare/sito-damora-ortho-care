@@ -1546,9 +1546,8 @@ footer {
   .nav-cta { padding: 10px 18px; font-size: 11px; }
   .brand img { height: 64px; }
   .article-author-box { flex-direction: column; text-align: center; }
-  .sedi-extra { grid-template-columns: repeat(5, 1fr); gap: 12px 6px; }
-  .sedi-extra-item strong { font-size: 12px; }
-  .sedi-extra-item span { font-size: 7px; letter-spacing: 0.5px; }
+  .sedi-extra { grid-template-columns: repeat(2, 1fr); }
+  .sedi-extra-item:last-child { grid-column: 1 / -1; }
   .hero-portrait { margin-top: 47px; }
   .hero-portrait::after { display: none; }
   .hero-portrait-caption {
@@ -1561,7 +1560,7 @@ footer {
   .hero-portrait-caption small { font-size: 9px; margin-top: 4px; color: var(--ink-faded); opacity: 1; }
   .hero-claim { font-size: 24px; margin-bottom: 16px; }
   .hero-intro { font-size: 14px; line-height: 1.55; margin-bottom: 20px; }
-  .kicker { margin-bottom: 16px; font-size: 9px; letter-spacing: 2px; }
+  .kicker { margin-bottom: 16px; font-size: clamp(7px, 2.2vw, 11px); letter-spacing: clamp(0.5px, 0.3vw, 2px); white-space: nowrap; }
   .hero-actions { gap: 14px; }
   .btn-primary { padding: 12px 20px; font-size: 11px; gap: 8px; }
   .btn-secondary { font-size: 11px; }
