@@ -1547,8 +1547,15 @@ footer {
   .brand img { height: 64px; }
   .article-author-box { flex-direction: column; text-align: center; }
   .hero-portrait { margin-top: 47px; }
-  .hero-portrait-caption { font-size: 13px; bottom: 14px; left: 14px; right: 14px; }
-  .hero-portrait-caption small { font-size: 8px; margin-top: 4px; }
+  .hero-portrait::after { display: none; }
+  .hero-portrait-caption {
+    position: static;
+    color: var(--ink);
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .hero-portrait-caption small { font-size: 9px; margin-top: 4px; color: var(--ink-faded); opacity: 1; }
   .hero-claim { font-size: 24px; margin-bottom: 16px; }
   .hero-intro { font-size: 14px; line-height: 1.55; margin-bottom: 20px; }
   .kicker { margin-bottom: 16px; font-size: 9px; letter-spacing: 2px; }
