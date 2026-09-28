@@ -1546,8 +1546,9 @@ footer {
   .nav-cta { padding: 10px 18px; font-size: 11px; }
   .brand img { height: 64px; }
   .article-author-box { flex-direction: column; text-align: center; }
-  .sedi-extra { grid-template-columns: repeat(2, 1fr); }
-  .sedi-extra-item:last-child { grid-column: 1 / -1; }
+  .sedi-extra { grid-template-columns: repeat(5, 1fr); gap: 12px 6px; }
+  .sedi-extra-item strong { font-size: 12px; }
+  .sedi-extra-item span { font-size: 7px; letter-spacing: 0.5px; }
   .hero-portrait { margin-top: 47px; }
   .hero-portrait::after { display: none; }
   .hero-portrait-caption {
