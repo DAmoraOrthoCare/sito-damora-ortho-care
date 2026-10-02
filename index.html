@@ -7,9 +7,7 @@
 <meta name="description" content="Studio ortopedico del Dott. Bartolomeo D'Amora. Ozonoterapia, protesi articolari, traumatologia, infiltrazioni. Scafati, Torre Annunziata, Pompei. Prima la diagnosi giusta, poi la cura su misura per te.">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="apple-touch-icon" href="assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -317,25 +315,37 @@
     <div class="sedi-grid">
       <div class="sede-card">
         <div class="sede-map">
-          <iframe src="https://www.google.com/maps?q=Via+Brindisi+12,+Scafati+SA&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="sede-photo" href="https://www.google.com/maps/search/?api=1&query=Via+Brindisi+12+Scafati" target="_blank" rel="noopener" aria-label="Come arrivare a Scafati: apri Google Maps">
+          <picture>
+            <source type="image/webp" srcset="assets/sedi/sede-scafati-640.webp 640w, assets/sedi/sede-scafati-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 560px">
+            <img src="assets/sedi/sede-scafati-1200.jpg" srcset="assets/sedi/sede-scafati-640.jpg 640w, assets/sedi/sede-scafati-1200.jpg 1200w" sizes="(max-width: 800px) 100vw, 560px" width="1200" height="675" loading="lazy" alt="Studio di Scafati, Via Brindisi 12: scrivania per le visite davanti a una finestra luminosa, con armadio e lavandino.">
+          </picture>
+          <span class="sede-photo-hint" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Clicca per aprire la mappa</span>
+        </a>
         </div>
         <div class="sede-content">
           <div class="sede-city">Scafati (SA)</div>
           <h3 class="sede-name">D'Amora Ortho Care</h3>
           <p class="sede-address">Via Brindisi 12, Scafati<br>Salerno · Campania</p>
-          <a href="https://www.google.com/maps/search/?api=1&query=Via+Brindisi+12+Scafati" target="_blank" rel="noopener" class="sede-link">Apri in Google Maps →</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Via+Brindisi+12+Scafati" target="_blank" rel="noopener" class="sede-link">Google Maps →</a><a href="https://maps.apple.com/?q=Via+Brindisi+12+Scafati" target="_blank" rel="noopener" class="sede-link sede-link-alt">Apple Maps →</a>
         </div>
       </div>
 
       <div class="sede-card">
         <div class="sede-map">
-          <iframe src="https://www.google.com/maps?q=Via+Castriota+8,+Torre+Annunziata+NA&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="sede-photo" href="https://www.google.com/maps/search/?api=1&query=Via+Castriota+8+Torre+Annunziata" target="_blank" rel="noopener" aria-label="Come arrivare a Torre Annunziata: apri Google Maps">
+          <picture>
+            <source type="image/webp" srcset="assets/sedi/sede-torre-annunziata-640.webp 640w, assets/sedi/sede-torre-annunziata-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 560px">
+            <img src="assets/sedi/sede-torre-annunziata-1200.jpg" srcset="assets/sedi/sede-torre-annunziata-640.jpg 640w, assets/sedi/sede-torre-annunziata-1200.jpg 1200w" sizes="(max-width: 800px) 100vw, 560px" width="1200" height="675" loading="lazy" alt="Studio di Torre Annunziata, Via Castriota 8: ambulatorio con lettino per le visite e scrivania del dottore.">
+          </picture>
+          <span class="sede-photo-hint" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Clicca per aprire la mappa</span>
+        </a>
         </div>
         <div class="sede-content">
           <div class="sede-city">Torre Annunziata (NA)</div>
           <h3 class="sede-name">Studio CTF</h3>
-          <p class="sede-address">Via Castriota 8 · c/o Centro Terapia Fisica<br>Napoli · Campania</p>
-          <a href="https://www.google.com/maps/search/?api=1&query=Via+Castriota+8+Torre+Annunziata" target="_blank" rel="noopener" class="sede-link">Apri in Google Maps →</a>
+          <p class="sede-address">Via Castriota 8, Torre Annunziata<br>Napoli · Campania</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Via+Castriota+8+Torre+Annunziata" target="_blank" rel="noopener" class="sede-link">Google Maps →</a><a href="https://maps.apple.com/?q=Via+Castriota+8+Torre+Annunziata" target="_blank" rel="noopener" class="sede-link sede-link-alt">Apple Maps →</a>
         </div>
       </div>
     </div>

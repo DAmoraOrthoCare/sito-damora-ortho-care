@@ -614,11 +614,56 @@ section {
   position: relative;
   overflow: hidden;
 }
-.sede-map iframe {
+.sede-photo,
+.sede-photo picture {
+  display: block;
   width: 100%;
   height: 100%;
-  border: none;
-  filter: grayscale(0.4) contrast(1.05);
+}
+.sede-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.sede-photo:hover img,
+.sede-photo:focus-visible img {
+  transform: scale(1.03);
+}
+.sede-photo:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: -3px;
+}
+.sede-photo {
+  position: relative;
+}
+.sede-photo-hint {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 16px rgba(26, 26, 26, 0.22);
+  transition: background 0.3s, color 0.3s;
+}
+.sede-photo:hover .sede-photo-hint,
+.sede-photo:focus-visible .sede-photo-hint {
+  background: var(--teal);
+  color: #fff;
+}
+.sede-link-alt {
+  margin-left: 20px;
+  opacity: 0.75;
 }
 
 .sede-content {
